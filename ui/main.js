@@ -34,3 +34,26 @@ button.onclick = function(){
     request.open('GET', 'http://gowthamtri.imad.hasura-app.io/counter', true);
     request.send(null);
 };
+
+var sButton = document.getElementById('submit');
+
+sButton.onclick = function(){
+    var nameInput = document.getElementById('name');
+    
+    var names = ['1','2','3','4'];
+    var list = '';
+    for (var i=0;i<names.length;i++){
+        list += '<li>' + names[i] + '</li>';
+    }
+    var nameList = document.getElementById('name-list');
+    nameList.innerHtml = nameList;
+}
+
+
+
+
+
+
+
+
+
