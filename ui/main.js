@@ -46,7 +46,7 @@ sButton.onclick = function(){
         list += '<li>' + names[i] + '</li>';
     }
     var nameList = document.getElementById('name-list');
-    nameList.innerHtml = nameList;
+    nameList.innerHTML = nameList;
 }
 
 
