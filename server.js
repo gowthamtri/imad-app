@@ -12,6 +12,20 @@ var artOne = {
     content: ` content for article one`
 };
 
+var artTwo = {
+    title : 'Article two',
+    heading: 'Article two',
+    date: 'Aug 19, 2017',
+    content: ` content for article two`
+};
+
+var artThree = {
+    title : 'Article three',
+    heading: 'Article three',
+    date: 'Aug 19, 2017',
+    content: ` content for article three`
+};
+
 function createTemplate(data){
     var title = data.title;
     var date = data.date;
@@ -53,11 +67,11 @@ app.get('/article-one',function(req,res){
 });
 
 app.get('/article-two',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+    res.send(createTemplate(artTwo));
 });
 
 app.get('/article-three',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+    res.send(createTemplate(artThree));
 });
 
 app.get('/ui/style.css', function (req, res) {
