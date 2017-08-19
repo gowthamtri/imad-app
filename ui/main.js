@@ -5,5 +5,5 @@ element.InnerHtml= "updated content";
 
 var img = document.getElementById('img');
 img.onclick = function(){
-    img.style.marginleft = '180px';
+    img.style.marginLeft = '180px';
 };
