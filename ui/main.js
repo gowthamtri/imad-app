@@ -4,6 +4,13 @@ var element = document.getElementById('main-text');
 element.InnerHtml= "updated content";
 
 var img = document.getElementById('img');
+var marginLeft = 0;
+function moveRight(){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
+}
+
 img.onclick = function(){
-    img.style.marginLeft = '180px';
+    var interval = setInterval(moveRight,100);
+    
 };
