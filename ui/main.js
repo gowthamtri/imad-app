@@ -47,7 +47,7 @@ sButton.onclick = function(){
     }
     var nameList = document.getElementById('name-list');
     nameList.innerHTML = nameList;
-}
+};
 
 
 
