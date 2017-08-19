@@ -17,9 +17,9 @@ console.log('Loaded!');
 
 var counterCount = 0;
 
-var counter = document.getElementById('counter');
+var button = document.getElementById('counter');
 
-counter.onclick = function(){
+button.onclick = function(){
     counterCount = counterCount + 1;
     var span = document.getElementById('count');
     span.InnerHTML = counterCount.toString();
